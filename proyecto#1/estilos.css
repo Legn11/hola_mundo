@@ -1,0 +1,27 @@
+.datos {
+    display: flex;
+    flex-direction: row;
+    background-color: black;
+    height: 500px;
+    width: 500px;
+}
+.fondo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: aqua;
+    height: 100vh;
+}
+button{
+    height: 35px;
+    width: 85px;
+    background-color: rgb(99, 122, 184);
+    border-radius: 10px;
+    transition: .7s;
+
+}
+button:hover{
+    color: antiquewhite;
+    background-color: rgb(206, 190, 169);
+    border: solid 1px;
+}

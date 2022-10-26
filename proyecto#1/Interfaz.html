@@ -8,36 +8,37 @@
     <title>Proyecto#1</title>
 </head>
 <body>
-    <h1>Pilas</h1>
     <div>
-        <div class="fondo">
-
-<div class="datos" id="datos"> 
-    <form action="" method="dialog">
-    <label for="pila">Inicio</label>
-    <input type="text" id="pila">
-    <label for="pila">final</label>
-
-    <div> 
-        <Button type="button" id="meter">Insertar</Button>
-    </div>
-    <div> 
-        <Button type="button" id="eliminar">Eliminar</Button>
-    </div>
-    <div> 
-        <Button type="button" id="mostrar">Mostrar</Button>
-    </div>
-    <div> 
-        <Button type="button" id="regresar">Regresar</Button>
-    </div>
-
-</form>
-</div>
-    
+        <div class="menu">
+            <div> <button> <a href="intro.html">Regresar</a></button></div>
         </div>
-
+        <div class="fondo">
+           
+            <div class="datos" id="datos">
+                <form action="" method="dialog" id="form">
+                    <div class="interior">
+                        <h1>Pila</h1>
+                        <div>
+                            <input type="number" id="numeros" placeholder="numero de 1 a 99">
+                        </div>
+                        <div>
+                            <Button type="button"  onclick="pila()">Insertar</Button>
+                        </div>
+                        <div>
+                            <Button type="button"  onclick="sacar()">Eliminar</Button>
+                        </div>
+                        <div>
+                            <Button type="button"  onclick="ver()">Mostrar</Button>
+                        </div>
+                        <div>
+                            <Button type="button" onclick="reiniciar()">Reiniciar</Button>
+                        </div>
+                </form>
+                        <div id="resultado" class="resultado"></div>
+                    </div>
+            </div>
+        </div>
     </div>
+    <script src="in.js"></script>
 </body>
-
-
 </html>

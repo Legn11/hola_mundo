@@ -1,4 +1,4 @@
-.datos, .contenedor {
+.datos{
     display: flex;
     flex-direction: column;
     background-color: rgb(6, 52, 177);
@@ -6,7 +6,17 @@
     width: 400px;
     border-radius: 8px;
 }
-.fondo, .interno{
+.datos_{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(6, 52, 177);
+    height: 400px;
+    width: 400px;
+    border-radius: 8px;
+}
+.fondo, .fondo_ {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -14,7 +24,7 @@
     background-color: rgb(255, 255, 255);
     height: 100vh;
 }
-.interior, .orden{
+.interior{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -53,4 +63,8 @@ h1{
 a{
     text-decoration: none;
     color: aliceblue;
+}
+.bintro{
+    height: 50px;
+    width: 130px;
 }

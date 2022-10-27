@@ -1,4 +1,3 @@
-// let item = document.getElementById("numeros").value;
 let almacen = [];
 const tamaño = 6;
 let cima = 0;
@@ -46,4 +45,7 @@ function reiniciar() {
       cima = cima - 1;
     }
   }
+}
+function anuncio(){
+alert("La opción estará disponible proximamente");
 }

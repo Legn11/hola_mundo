@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="estilos.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto#1</title>
+</head>
+<body>
+    <div>
+        <div class="menu">
+            <div> <button> <a href="intro.html">Regresar</a></button></div>
+        </div>
+        <div class="fondo">
+            <div class="datos" id="datos">
+                <form action="" method="dialog" id="form">
+                    <div class="interior">
+                        <h1>COLA</h1>
+                        <div>
+                            <input type="number" id="numcola" placeholder="numero de 1 a 99">
+                        </div>
+                        <div>
+                            <Button type="button" onclick="cola()">Insertar</Button>
+                        </div>
+                        <div>
+                            <Button type="button" onclick="eliminar()">Eliminar</Button>
+                        </div>
+                        <div>
+                            <Button type="button" onclick="visualizar()">Mostrar</Button>
+                        </div>
+                        <div>
+                            <Button type="button" onclick="restablecer()">Reiniciar</Button>
+                        </div>
+                </form>
+                <div id="resultado" class="resultado"></div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <script src="colas.js"></script>
+</body>
+</html>

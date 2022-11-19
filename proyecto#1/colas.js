@@ -15,7 +15,7 @@ function cola() {
             alert("Debe introducir un numero de 1 a 99 para poder continuar");
         } else {
             if (frente === 1 && final === max || frente === final + 1) {
-                alert("pila llena");
+                alert("Cola llena");
             } else {
                 if (frente === 0 && final === 0) {
                     frente = 1;
@@ -39,13 +39,12 @@ function cola() {
 function eliminar() {
     var valor = document.getElementById("numcola").value;
     if (frente === 0 && final === 0) {
-        console.log("cola vacia");
+        alert("cola vacia");
     } else {
         contenedor.shift(valor);
         if (frente === final) {
             frente = 0;
             final = 0;
-            console.log(contenedor);
         } else {
             if (frente === max) {
                 frente = 1;
@@ -60,7 +59,6 @@ function eliminar() {
 function visualizar() {
     document.getElementById("resultado").innerHTML += "<p>" + "Cola:  " + contenedor + "</p>";
     document.getElementById("resultado").innerHTML += "<p>" + "Frente:  " + frente + "  " + "Final:  " + final + "</p>";
-    //   document.getElementById("resultado").innerHTML += "<p>" + "final:  " + final + "</p>";
 }
 // Esta funcion vacia el contenido del arreglo y reinicia a 0 la variable frente y final.
 function restablecer() {
